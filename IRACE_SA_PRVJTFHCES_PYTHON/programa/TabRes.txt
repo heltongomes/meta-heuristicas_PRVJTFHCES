@@ -1,0 +1,17 @@
+Instancias/Inst1501.txt 	 15 	 3 	 301269 	 218 	  0.14 segundos 
+Instancias/Inst1502.txt 	 15 	 2 	 680359 	 147 	  0.11 segundos 
+Instancias/Inst1503.txt 	 15 	 2 	 145023 	 142 	  0.18 segundos 
+Instancias/Inst1504.txt 	 15 	 3 	 346648 	 213 	  0.13 segundos 
+Instancias/Inst1505.txt 	 15 	 3 	 164113 	 337 	  0.15 segundos 
+Instancias/Inst1506.txt 	 15 	 3 	 322818 	 5028 	  0.12 segundos 
+Instancias/Inst1507.txt 	 15 	 3 	 127104 	 300 	  0.13 segundos 
+Instancias/Inst1508.txt 	 15 	 4 	 101916 	 393 	  0.13 segundos 
+Instancias/Inst1801.txt 	 18 	 3 	 1167734 	 187 	  0.14 segundos 
+Instancias/Inst1802.txt 	 18 	 3 	 1019526 	 234 	  0.14 segundos 
+Instancias/Inst1803.txt 	 18 	 4 	 2103214 	 234 	  0.14 segundos 
+Instancias/Inst1804.txt 	 18 	 4 	 1108317 	 232 	  0.15 segundos 
+Instancias/Inst1805.txt 	 18 	 3 	 251058 	 416 	  0.14 segundos 
+Instancias/Inst1806.txt 	 18 	 4 	 360738 	 503 	  0.17 segundos 
+Instancias/Inst1807.txt 	 18 	 4 	 293456 	 373 	  0.18 segundos 
+Instancias/Inst1808.txt 	 18 	 4 	 233419 	 493 	  0.17 segundos 
+Instancias/Inst1501.txt 	 15 	 3 	 178636 	 217 	  0.17 segundos 

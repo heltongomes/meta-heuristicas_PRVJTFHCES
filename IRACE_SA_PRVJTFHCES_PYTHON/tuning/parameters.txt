@@ -1,0 +1,4 @@
+tempinicial     "--tempinicial "     i       (100, 1000000)
+tempcritica     "--tempcritica "     r       (0.001, 0.020)
+taxa            "--taxa "            r       (0.800, 0.999)
+samax           "--samax "           i       (1, 5)

@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-GERA SOLUÇÃO INICIAL
+GERA SOLUÇÃO INICIAL PARA O PRVJTFHCES
 
-@author: helton gomes
+@author: Helton Gomes
 """
 
+# IMPORTANDO BIBLIOTECAS
 import random
 import time
 
 time.process_time
 
+# FUNÇÃO PARA A DETERMINAÇÃO DE UMA SOLUÇÃO INICIAL PARA O PRVJTFHCES
 def sol_ini(cid, veic, cap, pic, dem):
     
     sol = []
@@ -52,26 +54,12 @@ def sol_ini(cid, veic, cap, pic, dem):
         lista_aux.clear()
         sol.append(lista_veic[:])
         
-    #print('Capcidade Restante:', cap_rest)
-    #print(cap_rest.index(max(cap_rest)))
-    #print('Lista C: ', lista_C)
-    #print(len(lista_C))
-    
-    # CASO ALGUMA CIDADE NA SEJA COLOCADA NA SOLUÇÃO, ELA É INSERIDA NA ROTA CUJO VEICULO TEM MAIOR
-    # CAPACIDADE RESTANTE
-    
-    #if len(lista_C) != 0:
+    # TESTANDO A CAPACIDADE RESTANTE
     while len(lista_C) != 0:
         for i in lista_C:
             x = cap_rest.index(max(cap_rest))
             sol[x].append(i)
             cap_rest[x] = cap_rest[x] - max(dem[i], pic[i])
             lista_C.remove(i)
-    
-    #print('Capcidade Restante:', cap_rest)
-             
-    #print('Lista C: ', lista_C)
-    #print(len(lista_C))
                
     return sol
-    

@@ -1,5 +1,5 @@
 # meta-heuristicas_PRVJTFHCES
- Códigos em python referentes ao projeto "Métodos Meta-heurísticos para o PRVJTFHCES".
+ Códigos em python/AMPL referentes ao projeto "Métodos Meta-heurísticos para o PRVJTFHCES".
 
  ## IRACE_SA_PRVJTFHCES_PYTHON
 

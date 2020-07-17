@@ -1,14 +1,16 @@
 # ==========================================================================================
-# Problema de Roteamento de Veículos
+# Problema de Roteamento de Veículos com Janela de Tempo, Frota Heterogênea e Coleta e
+# Entrega Simultâneas
 # ==========================================================================================
+
 # ==========================================================================================
-# model and data definition
+# Definição do modelo (.mod) e do conjunto de dados (.dat)
 # ==========================================================================================
 	model Mod_PRVJTCES.mod;
 	data ./Inst15/Inst1502.dat;
 
 # ==========================================================================================
-# cplex options 
+# Opções do Cplex 
 # ==========================================================================================
 option show_stats 1;
 option solver cplex;

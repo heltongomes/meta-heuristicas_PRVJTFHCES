@@ -1,82 +1,81 @@
-# --------------- Declaração dos Parâmetros Iniciais -----------------------
+/*
+MODELO MATEMÁTICO DE PROGRAMAÇÃO LINEAR INTEIRA PARA O PRVJTFHCES
 
+@autor: Helton Gomes
+*/
+
+# --------------- DECLARAÇÃO DOS PARÂMETROS INICIAIS -----------------------
+
+# NÚMERO TOTAL DE CLIENTES
 param n;
-# Número total de clientes
 
+# NÚMERO TOTAL DE VEÍCULOS
 param m;
-# Número total de clientes
 
-# --------------------- Declaração dos Conjuntos ---------------------------
 
+# --------------------- DECLARAÇÃO DOS CONJUNTOS -------------------------------
+
+# CONJUNTO DE CLIENTES A SEREM ATENDIDOS
 set C := 1..n;
-# conjunto das cidades a serem visitadas
 
+# CONJUNTO DE CLIENTES A SEREM ATENDIDOS MAIS O DEPÓSITO (0, n+1)
 set N := 0..(n+1);
-# conjuntos das cidades + depósito (0, n+1)
 
-#set N0 := 0..n;
-# conjuntos das cidades + depósito (0, n+1)
-
-#set N1 := 1..(n+1);
-# conjuntos das cidades + depósito (0, n+1)
-
+# CONJUNTO DE VEÍCULOS
 set K := 1..m;
-# conjunto dos veículos
 
-# --------------------- Declaração dos Parâmetros ---------------------------
+# --------------------- DECLARAÇÃO DOS PARÂMETROS -------------------------------
 
-param c {i in N, j in N};
 # Matriz com o custos de transporte entre as cidades i e j, com i <> j
+param c{i in N, j in N};
 
-param t {i in N, j in N};
 # Matriz com o tempo de viagem entre as cidades i e j, com i <> j
+param t{i in N, j in N};
 
-param d {j in C};
-# Demanda de entrega do cliente j, J=1..n
+# Demanda de entrega do cliente j (j = 1, ..., n)
+param d{j in C};
 
-param p {j in C};
-# Demanda de entrega do cliente j, J=1..n
+# Demanda de entrega do cliente j (j = 1, ..., n)
+param p{j in C};
 
-param ts {i in N}; 
-#Tempo de serviço de cada cliente i
+# Tempo de serviço de cada cliente i
+param ts{i in N}; 
 
-param a {i in N};
-# inicio da janela de atendimento
+# Inicio da janela de atendimento de cada cliente i
+param a{i in N};
 
-param b {i in N};
-# fim da janela de tempo
+# Fim da janela de tempo de cada cliente i
+param b{i in N};
 
-param Q {k in K};
-# capacidade dos veículos
+# Capacidade de cada veículo k
+param Q{k in K};
 
+# Constante de valor elevado
 param M;
-# constante de valor elevado
 
-# --------------------- Declaração das variáveis ---------------------------
+# --------------------- DECLARAÇÃO DAS VARIÁVEIS ---------------------------------
 
-var x {i in N, j in N, k in K}, binary;
-# 1 se o veículo sai do cliente i e vai pro cliente j, usando o veículo k
+# 1 se o veículo k sai do cliente i e vai pro cliente j
 # 0 caso contrário.
+var x{i in N, j in N, k in K}, binary;
 
+# Instante de tempo em que o veículo k começa a servir o cliente i
 var s {i in N, k in K}, >=0; 
-# instante de tempo em que o veículo k começa a servir o cliente i.
 
+# Demanda coletada dos clientes na rota até o cliente i (incluindo o cliente i) e transportada até o cliente j
 var y {i in N, j in N}, >=0;
-# Demanda coletada dos clientes na rota até o cliente i (incluindo o cliente i) e transportada até o cliente j.
 
+# Demanda a ser entregue aos clientes da rota após o cliente i e transportada até o cliente j
 var z {i in N, j in N}, >=0;
-# Demanda a ser entregue aos clientes da rota após o cliente i e transportada até o cliente j.
 
-# ------------------------- Função Objetivo --------------------------------
+# ------------------------- FUNÇÃO OBJETIVO -----------------------------------------
 
+# Minimiza o custo total de transporte
 minimize custo: sum {i in N, j in N, k in K: (i != j) && (i != n+1) && (j != 0) } c[i,j] * x[i,j,k];
-# minimiza o custo total de transporte
 
-# ---------------------- Restrições do Problema ----------------------------
+# ---------------------- RESTRIÇÕES DO PROBLEMA ------------------------------------
 
 s.t. RV2 {i in C} : sum {j in N, k in K} x[i,j,k] = 1;
-
-# s.t. RV3 {k in K} : sum {i in C, j in N} d[i]*x[i,j,k] <= Q[k];
 
 s.t. RV3a{j in C} : sum {i in N: i != j} y[j,i] - sum {i in N: i != j} y[i,j] = p[j];
 

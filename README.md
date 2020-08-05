@@ -1,4 +1,4 @@
-# meta-heuristicas_PRVJTFHCES
+# Projeto meta-heuristicas_PRVJTFHCES
  * Códigos em Python/AMPL referentes ao projeto "Métodos Meta-heurísticos para o Problema de Roteamento de Veículos com Janela de Tempo, Frota Heterogênea e Coleta e Entrega Simultânea (PRVJTFHCES)".
 
  ## IRACE_SA_PRVJTFHCES_PYTHON

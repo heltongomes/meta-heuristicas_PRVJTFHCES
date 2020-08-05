@@ -1,5 +1,3 @@
-theme: jekyll-theme-slate
-
 title: Meta-heurísticas para o PRVJTFHCES
 description: "Métodos meta-heurísticos em Python para o PRVJTFHCES"
 
@@ -10,3 +8,14 @@ repo: "https://github.com/heltongomes/meta-heuristicas_PRVJTFHCES/"
 
 url: https://heltongomes.github.io/
 baseurl: /meta-heuristicas_PRVJTFHCES
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+
+theme: jekyll-theme-slate
+

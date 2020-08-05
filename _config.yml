@@ -1,6 +1,4 @@
 theme: jekyll-theme-slate
 
 title: Meta-heurísticas para o PRVJTFHCES
-email: helton.gomes@gmail.com
-
-baseurl: /meta-heuristicas_PRVJTFHCES
+description: "Métodos meta-heurísticos em Python para o PRVJTFHCES"

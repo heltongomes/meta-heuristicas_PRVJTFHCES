@@ -10,3 +10,5 @@
  * Modelo matemático de programação linear para o PRVJTFHCES implementado na linguagem AMPL.
  
  ## Resultados
+
+* Tabela com a comparação dos resultados obtidos pelo modelo matemático e pelos métodos meta-heurísticos.

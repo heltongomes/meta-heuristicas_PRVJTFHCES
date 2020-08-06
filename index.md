@@ -3,7 +3,7 @@ title: Home
 ---
 
 <div> 
-    <img src="{{ '/images/logo_em.png' | absolute_url }}" alt="EM" style="width:10%;" >
+    <img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:10%;" >
     <img src="{{ '/images/logo_ufop.jpg' | absolute_url }}" alt="UFOP" style="width:3%;" >
 </div>
 

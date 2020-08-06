@@ -2,10 +2,7 @@
 title: Home
 ---
 
-<div> 
-    <img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:50%;" >
-    <img src="{{ '/images/logo-ufop.jpg' | absolute_url }}" alt="UFOP" style="width:30%;" >
-</div>
+
 
 # Resumo do Projeto
 
@@ -14,4 +11,7 @@ title: Home
 ### Autores
 
 Prof. Dr. Helton Gomes/Prof. Dr. Aloisio Gomes Jr. - Departamento de Engenharia de Produção - DEPRO - Escola de Minas  - UFOP
+ 
+<img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:50%;" >
+
 

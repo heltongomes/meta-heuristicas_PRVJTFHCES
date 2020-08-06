@@ -1,3 +1,5 @@
+theme: jekyll-theme-slate
+
 title: Meta-heurísticas para o PRVJTFHCES
 description: "Métodos meta-heurísticos em Python para o PRVJTFHCES"
 
@@ -16,5 +18,3 @@ defaults:
       layout: default
 
 markdown: kramdown
-
-theme: jekyll-theme-slate

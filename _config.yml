@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
 
-title: Meta-heurísticas para o PRVJTFHCES
-description: "Métodos meta-heurísticos em Python para o PRVJTFHCES"
+title: Métodos Meta-heurísticos para a resolução do PRVJTFHCES
+description: "Métodos meta-heurísticos em Python para a resolução do PRVJTFHCES"
 
 author: Helton Gomes
 pub_year: 2020

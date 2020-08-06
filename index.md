@@ -10,8 +10,9 @@ title: Home
 
 ### Autores
 
-<img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:3%;" > Prof. Dr. Helton Gomes/Prof. Dr. Aloisio Gomes Jr. - Departamento de Engenharia de Produção - DEPRO - Escola de Minas  - UFOP
- 
+<div> 
+<img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:1%;" > Prof. Dr. Helton Gomes/Prof. Dr. Aloisio Gomes Jr. - Departamento de Engenharia de Produção - DEPRO - Escola de Minas  - UFOP
+<div>  
 
 
 

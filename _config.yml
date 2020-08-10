@@ -22,6 +22,8 @@ repo: "https://github.com/heltongomes/meta-heuristicas_PRVJTFHCES"
 # your gh-pages url: https://username.github.io
 url: https://heltongomes.github.io
 baseurl: /meta-heuristicas_PRVJTFHCES
+# analytics if desired (and use environment variable on build command)
+# google_analytics: UA-74844011-1
 
 # defaults (to simplify front matter)
 defaults:

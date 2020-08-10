@@ -11,7 +11,7 @@ Neste projeto foi desenvolvido um método computacional para a resolução do pr
 ### Autores
 
 <p style='text-align: justify;'>
-<img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:5%;" > Prof. Dr. Helton Gomes/Prof. Dr. Aloisio Gomes Jr. - Departamento de Engenharia de Produção - DEPRO - Escola de Minas  - UFOP 
+<img src="{{ '/images/logo-em.png' | absolute_url }}" alt="EM" style="width:1%;" > Prof. Dr. Helton Gomes/Prof. Dr. Aloisio Gomes Jr. - Departamento de Engenharia de Produção - DEPRO - Escola de Minas  - UFOP 
 </p>
  
 

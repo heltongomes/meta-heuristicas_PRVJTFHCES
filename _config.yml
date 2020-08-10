@@ -1,20 +1,36 @@
-theme: jekyll-theme-slate
+# https://github.com/heltongomes/meta-heuristicas_PRVJTFHCES
+# based on slate theme https://github.com/pages-themes/slate
 
+# Notes: 
+# - fig include, {% include figure.html file="my-cat.jpg" alt="cat" caption="My cat" width="50%" %}
+# - pages with "nav: true" in front matter will be in header nav
+
+# site settings
 title: Métodos Meta-heurísticos para a resolução do PRVJTFHCES
-description: "Proposta de métodos meta-heurísticos em Python para a resolução do PRVJTFHCES"
+description: "Proposta de métodos meta-heurísticos em Python para a resolução do PRVJTFHCES."
+keywords: "logística, roteamento de veículos, otimização, meta-heurísticas"
 
+# author settings for cc-by
 author: Helton Gomes
 pub_year: 2020
 github_username: heltongomes
-repo: "https://github.com/heltongomes/meta-heuristicas_PRVJTFHCES/"
 
-url: https://heltongomes.github.io/
+# add the full url for the github repository
+repo: "https://github.com/heltongomes/meta-heuristicas_PRVJTFHCES"
+
+# urls
+# your gh-pages url: https://username.github.io
+url: https://heltongomes.github.io
 baseurl: /meta-heuristicas_PRVJTFHCES
 
+# defaults (to simplify front matter)
 defaults:
   - scope:
       path: ""
     values:
       layout: default
 
+# Build settings
 markdown: kramdown
+
+theme: jekyll-theme-slate

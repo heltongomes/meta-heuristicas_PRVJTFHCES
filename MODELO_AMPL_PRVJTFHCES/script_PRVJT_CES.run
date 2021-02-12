@@ -36,6 +36,8 @@ display z;
 display y;
 display s;
 
+display tempo;
+
 reset;
 
 
